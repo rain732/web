@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <title>Home</title>
+   <link rel="stylesheet" href="css\index.css">
+   <link rel="stylesheet" type="text/css" href="">
+   </head>
+
+   <body>
+
+      <header>
+         <div class="topnav">
+          <a href="Home.html" class="active">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="location.html">Location</a>
+          <a href="contact.html">Contact</a>
+          <a href="Gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="login.html" id="leftabout" >Login</a>
+      </header>
+
+            <div id="page-content">
+         <div id="content-wrap">
+           <!-- all other page content -->
+          <section id="picture">
+               <div class="slideshow">
+                  <div class="slideshow-container">
+
+                     <div class="mySlides fade">
+                       <div class="slides-numbertext"></div>
+                       <img src="imgs/img1.jpg" style="width:100%">
+                       <div class="slides-text"></div>
+                     </div>
+
+                     <div class="mySlides fade">
+                       <div class="slides-numbertext"></div>
+                       <img src="imgs/img2.jpg" style="width:100%">
+                       <div class="slides-text"></div>
+                     </div>
+
+                     <div class="mySlides fade">
+                       <div class="slides-numbertext"></div>
+                       <img src="imgs/img3.jpg" style="width:100%">
+                       <div class="slides-text"></div>
+                     </div>
+
+                  </div>
+                  <br>
+
+                  <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                  </div>
+
+               <script>
+               var slideIndex = 0;
+               showSlides();
+
+               function showSlides() {
+                 var i;
+                 var slides = document.getElementsByClassName("mySlides");
+                 var dots = document.getElementsByClassName("dot");
+                 for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";  
+                 }
+                 slideIndex++;
+                 if (slideIndex > slides.length) {
+                     slideIndex = 1
+                  } 
+
+                 for (i = 0; i < dots.length; i++) {
+                   dots[i].className = dots[i].className.replace(" slides-active", "");
+                 }
+                 slides[slideIndex-1].style.display = "block";  
+                 dots[slideIndex-1].className += " slides-active";
+                 setTimeout(showSlides, 3000); // Change image every 2 seconds
+               }
+               </script>
+         </div>
+      </section>
+          
+
+         </div>
+
+          <footer>
+            <audio controls loop autoplay style="width: 100px;">
+              <source src="media/rain.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="footer" style="margin-bottom: 0;">
+               <div class="ffooter">
+                  <div class="card">
+                     <a href="https://www.facebook.com/ghaith.mohamad.77/" target="_blank"><img src="img\oreki1.jpg" style="width: 100%"></a>
+                     <div class="card-container">
+                        <h4><b>Owner</b></h4>
+                        <p>
+                           Burger Maker
+                        </p>
+                     </div>
+                  </div>
+              </div>
+
+              <div class="lfooter">
+                  <h3>All Rights Reserved To Ghaith Abu Sharaa &#169; 2020</h3>
+              </div>
+
+            </div>
+          </footer>
+      </div>
+   </body>
+</html>

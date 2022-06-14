@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+  <style type="text/css">
+  fieldset{
+
+    box-shadow: 0 3px 6px 0;
+    background-color: rgba(153, 0, 204,50%);
+    border: 1px solid:#CCC;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 10px;
+  }
+  legend{
+    box-shadow: 0 3px 6px 0;
+    background:rgba(153, 0, 204,50%);
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  label,input,select{display:block}
+  input{
+    margin-bottom: 5px;
+    padding: 7px;
+  }
+  .animation {  
+    width: 100px;
+    height: 50px;
+    background-color: purple;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 100px;}
+  to {left: 500px;}
+}
+  </style>
+</head>
+<body>
+  <body style="">  
+
+   <div class="topnav">
+    <a href="Home.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="location.html">Location</a>
+    <a href="contact.html">Contact</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="login.html" id="leftabout" class="active" >Login</a>
+  </div>
+
+      <div id="page-content">
+         <div id="content-wrap">
+           <!-- all other page content -->
+          <section>
+            <div>
+              <div class="animation" id="div1">WELCOME</div>
+              <div class="animation" id="div2">TO</div>
+              <div class="animation" id="div3">OUR</div>
+              <div class="animation" id="div4">RESTURANT</div>
+              <div class="animation" id="div5">BURGER MAKER</div>
+            </div>
+            
+           </section>
+          <center><section>
+              <form name="register" action="post"  >
+                <fieldset>
+
+                 <legend>Log In</legend>
+
+                 <label>User Name</label>
+                 <input type="text" name="username">
+
+                 <label>Password</label>
+                 <input type="password"  name="password">
+
+                 <input type="submit" name="submit" >
+
+                </fieldset>
+              </form>
+          </section></center>
+          
+
+         </div>
+
+          <footer>
+            <div class="footer" style="margin-bottom: 0;">
+               <div class="ffooter">
+
+                  <div class="card">
+                     <a href="https://www.facebook.com/ghaith.mohamad.77/" target="_blank"><img src="img\oreki1.jpg" style="width: 100%"></a>
+                     <div class="card-container">
+                        <h4><b>Owner</b></h4>
+                        <p>Burger Maker</p>
+                     </div>
+                  </div>
+              <div class="lfooter">
+                  <h3>All Rights Reserved To Ghaith Abu Sharaa &#169; 2020</h3>
+              </div>
+
+            </div>
+          </footer>
+      </div>
+</body>
+</html>
+
